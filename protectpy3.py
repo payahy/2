@@ -15,25 +15,25 @@ import datetime
 import requests,urllib,json
 
 
-#Khusus Login Qr
-#cl = LINE()
+#Khusus Login Token
+#cl = LINE("TokenMu")
 #cl.log("Auth Token : " + str(cl.authToken))
 #cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 
-#Khusus Login Token
-cl = LINE('EtZDJYegY2xy5L4QjV0e.wvhydD8HlswGsvWpinOaVG.tkUvi/7Gw6CRts5oSp5RA/kTfnfW5apeGt2z1nYBnqs=')
+#Khusus Login Qr
+cl = LINE()
 cl.log("Auth Token : " + str(cl.authToken))
 cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 
-ki = LINE('EtLmNWo7KNUdHQTkSs5a.3svWLda5Jb1maVIdRVif6G.ML3JdscVmcKTR0Wj5bjB/j8yKXL9WGk3UVGBsD0XDTg=')
+ki = LINE()
 ki.log("Auth Token : " + str(cl.authToken))
 ki.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 
-kk = LINE('EtHBJE9yfXZQc0QSWeb3.eYIoClpI2sl2hRSJw7q6SW.alkhuKlXgVeJygqskc0aUH9YNYZ7zfgTV1hdpw7asHo=')
+kk = LINE()
 kk.log("Auth Token : " + str(cl.authToken))
 kk.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 
-kc = LINE('EtOJ0VznD2VHgYhlCnS8.LetmZ3b3S8xsvXte6ExxAa.fb/cbmv5lUxPAd7Dc+lCPlQ8oR1FJ5cSsaxB1am+f5w=')
+kc = LINE()
 kc.log("Auth Token : " + str(cl.authToken))
 kc.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 
@@ -43,54 +43,60 @@ startBot = time.time()
 elapsed_time = format_timespan(time.time()-startBot)
 
 
-helpMessage ="""╠══[Command Public]
-╠[Id]
-╠[Mid]
-╠═══════════════════●
-╠[Command in the groups]
-╠═══════════════════●
-╠[Tutup qr]
-╠[Buka qr]
-╠[Invite 「Mid」]
-╠[Invite 「Mid」]
-╠[Ginfo]
-╠[Cancel]
-╠[White 「target」]
-╠[Restart]
-╠[Guest On/Off]
-╠[QrOn/Off]
-╠[closeqr on]
-╠[Lurking]
-╠[Bot Out]
-╠[Kill]
-╠[Group bc 「Kata」]
-╠[Contact bc「Kata」]
-╠[List grup]
-╠[Speed]
-╠[Runtime]
-╠════════════●
-╠[Command Owner]
-╠════════════●
-╠[Salken Ya]
-╠[Bunuh「@」]
-╠[Kick「Mid」]
-╠[All join]
-╠[Bye all]
-╠[Kill ban]
-╠[Ban 「@」]
-╠[Unban「@」]
-╠[Ban 「Contact」]
-╠[Unban 「Contact」]
-╠[Banlist]
-╠[Clear ban]
-╠[Tes]
-╠[Clear]
-╠══[Finish]
-╠════════════════════╝
-╔════════════════════╗
-     sᴜᴘᴘᴏʀᴛᴇᴅ ʙʏ  : 
-     TΣΔM SLΔCҜβΩT
-╚════════════════════╝
+helpMessage ="""
+[-Command Public-]
+
+[Id]
+[Mid]
+
+
+[-Group Hacks-]
+
+[Tutup qr]
+[Buka qr]
+[Invite 「Mid」]
+[Ginfo]
+[Cancel]
+[White 「target」]
+[Restart]
+
+[~Remote Bot~]
+
+[Guest On/Off]
+[QrOn/Off]
+[closeqr on]
+[Lurking]
+[Bot Out]
+[Kill]
+[Group bc 「Kata」]
+[Contact bc「Kata」]
+[List grup]
+[Speed]
+[Runtime]
+
+
+[~For's Owner~]
+
+[Salken Ya]
+[Bunuh「@」]
+[Kick「Mid」]
+[All join]
+[Bye all]
+[Kill ban]
+[Ban 「@」]
+[Unban「@」]
+[Ban 「Contact」]
+[Unban 「Contact」]
+[Banlist]
+[Clear ban]
+[Tes]
+[Clear]
+
+[-Info For'You-]
+.Status : On
+.Type : Protect
+
+CreatorID:
 line.me/ti/p/~fuck.you__
 """
 oepoll = OEPoll(cl)
@@ -104,7 +110,8 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
-admin=["u78643d09e42a36836a17cc918963a8b7"]
+admin=["ube187443474747c3ec352e7efeb48c1b"]
+owner=["ube187443474747c3ec352e7efeb48c1b"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -112,15 +119,15 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':False,
-    'message':"Thanks for add me \n Creator line.me/ti/p/~fuck.you__",
+    'message':"Thanks for add me \n Creator line.me/ti/p/~situ.sehat",
     "lang":"JP",
-    "comment":"Thanks for add me \n Creator line.me/ti/p/~fuck.you__",
+    "comment":"Thanks for add me \n Creator line.me/ti/p/~situ.sehat",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
     "clock":True,
-    "cName":"􀜁􀇔􏿿SLΔCҜβΩT",
+    "cName":"Protect",
     "blacklist":{},
     "whitelist":{},
     "wblacklist":False,
