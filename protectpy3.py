@@ -97,7 +97,7 @@ helpMessage ="""
 .Type : Protect
 
 CreatorID:
-line.me/ti/p/~fuck.you__
+line.me/ti/p/~situ.sehat
 """
 oepoll = OEPoll(cl)
 oepoll = OEPoll(ki)
